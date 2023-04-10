@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className='w-full flex py-6 justify-between items-center navbar'>
       <img src={logo} alt='bank__logo' className='w-[124px] h-[32px]' />
 
-      {/* sm:flex means - display is flex on small devices. Hidden means - all other devices this section is hidden */}
+      {/* sm:flex means - small devices and above use 'flex'. For smaller devices e.g. sx hide this section */}
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li 
@@ -21,6 +21,7 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/* sm:hidden means - small devices and above 'hide' this section'. For smaller devices e.g. sx display this section using 'flex' */}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img 
           src={toggle ? close : menu} 
