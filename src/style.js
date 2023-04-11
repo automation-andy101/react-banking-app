@@ -16,6 +16,7 @@ const styles = {
   };
   
   export const layout = {
+    // md:flex-row - medium devices and above use flex-col, devices smaller than medium use flex-col
     section: `flex md:flex-row flex-col ${styles.paddingY}`,
     sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
   
